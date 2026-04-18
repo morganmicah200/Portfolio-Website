@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import { SiGithub } from "react-icons/si";
 
 export type TechTag = {
   name: string;
@@ -43,7 +44,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         </ul>
 
         {/* Tech tags */}
-        <div className="pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2">
           {project.tech.map((tag) => (
             <span
               key={tag.name}
@@ -58,6 +59,19 @@ export default function ProjectCard({ project }: { project: Project }) {
               {tag.name}
             </span>
           ))}
+        </div>
+
+        {/* Footer */}
+        <div className="pt-4 border-t border-slate-100">
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-slate-900 transition-colors duration-150"
+          >
+            <SiGithub className="text-base" />
+            View on GitHub
+          </a>
         </div>
       </div>
     </div>
