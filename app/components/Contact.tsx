@@ -32,7 +32,7 @@ export default function Contact() {
     <>
       <section
         id="contact"
-        className="py-24 px-6"
+        className="py-24 px-6 scroll-mt-14"
         style={{ background: "var(--bg-panel)" }}
       >
         <div className="max-w-5xl mx-auto flex flex-col gap-12">

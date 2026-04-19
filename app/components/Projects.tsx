@@ -26,7 +26,7 @@ const projects: Project[] = [
       { name: "Docker", icon: SiDocker, color: "#2496ED" },
       { name: "pandas", icon: SiPandas, color: "#4DABCF" },
     ],
-    link: "https://github.com/morganmicah200",
+    link: "https://github.com/morganmicah200/tmdb-pipeline",
   },
   {
     category: "Analytics",
@@ -44,7 +44,7 @@ const projects: Project[] = [
       { name: "Power BI", color: "#F2C811" },
       { name: "pandas", icon: SiPandas, color: "#4DABCF" },
     ],
-    link: "https://github.com/morganmicah200",
+    link: "https://github.com/morganmicah200/medicare-analytics",
   },
   {
     category: "Financial Data",
@@ -62,13 +62,13 @@ const projects: Project[] = [
       { name: "pandas", icon: SiPandas, color: "#4DABCF" },
       { name: "REST APIs", color: "#818cf8" },
     ],
-    link: "https://github.com/morganmicah200",
+    link: "https://github.com/morganmicah200/sp500-analytics",
   },
 ];
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 px-6" style={{ background: "var(--bg)" }}>
+    <section id="projects" className="py-24 px-6 scroll-mt-14" style={{ background: "var(--bg)" }}>
       <div className="max-w-5xl mx-auto flex flex-col gap-12">
         <div className="flex flex-col gap-3">
           <p className="font-mono text-xs text-slate-600">

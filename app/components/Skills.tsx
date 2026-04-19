@@ -81,7 +81,7 @@ function SkillBadge({ skill }: { skill: Skill }) {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 px-6" style={{ background: "var(--bg-panel)" }}>
+    <section id="skills" className="py-24 px-6 scroll-mt-14" style={{ background: "var(--bg-panel)" }}>
       <div className="max-w-5xl mx-auto flex flex-col gap-12">
         <div className="flex flex-col gap-3">
           <p className="font-mono text-xs text-slate-600">

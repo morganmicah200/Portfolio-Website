@@ -44,7 +44,7 @@ const entries: ExperienceEntry[] = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 px-6" style={{ background: "var(--bg)" }}>
+    <section id="experience" className="py-24 px-6 scroll-mt-14" style={{ background: "var(--bg)" }}>
       <div className="max-w-5xl mx-auto flex flex-col gap-12">
         <div className="flex flex-col gap-3">
           <p className="font-mono text-xs text-slate-600">
