@@ -16,10 +16,10 @@ export default function Hero() {
         }}
       />
       {/* Gradient orbs */}
-      <div className="absolute -top-32 -left-24 w-[480px] h-[480px] rounded-full bg-indigo-100 opacity-60 blur-[90px] pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-[360px] h-[360px] rounded-full bg-violet-100 opacity-40 blur-[80px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-indigo-100 opacity-50 blur-[100px] pointer-events-none -translate-x-1/2" />
+      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-violet-100 opacity-35 blur-[80px] pointer-events-none translate-x-1/2" />
 
-      <div className="relative z-10 max-w-5xl w-full flex flex-col gap-6 py-20">
+      <div className="relative z-10 max-w-5xl mx-auto w-full flex flex-col gap-6 py-20">
         {/* Available badge */}
         <div className="self-start flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-semibold">
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
