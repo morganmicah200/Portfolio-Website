@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FaFileAlt } from "react-icons/fa";
 
 const navLinks = [
   { label: "projects", href: "#projects" },
@@ -26,17 +27,41 @@ export default function Header() {
         </span>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="font-mono text-xs text-slate-500 hover:text-indigo-400 transition-colors duration-150 tracking-wide"
-            >
-              ./{link.label}
-            </a>
-          ))}
-        </nav>
+        <div className="hidden md:flex items-center gap-6">
+          <nav className="flex items-center gap-8">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="font-mono text-xs text-slate-500 hover:text-indigo-400 transition-colors duration-150 tracking-wide"
+              >
+                ./{link.label}
+              </a>
+            ))}
+          </nav>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-lg font-mono text-xs font-semibold transition-all duration-150"
+            style={{
+              color: "#818cf8",
+              border: "1px solid rgba(129,140,248,0.35)",
+              background: "rgba(129,140,248,0.08)",
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.background = "rgba(129,140,248,0.16)";
+              e.currentTarget.style.borderColor = "rgba(129,140,248,0.6)";
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.background = "rgba(129,140,248,0.08)";
+              e.currentTarget.style.borderColor = "rgba(129,140,248,0.35)";
+            }}
+          >
+            <FaFileAlt className="text-xs" />
+            resume
+          </a>
+        </div>
 
         {/* Mobile hamburger */}
         <button
@@ -73,6 +98,16 @@ export default function Header() {
                 ./{link.label}
               </a>
             ))}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="font-mono text-sm text-indigo-400 hover:text-indigo-300 transition-colors flex items-center gap-2"
+            >
+              <FaFileAlt className="text-xs" />
+              resume
+            </a>
           </nav>
         </div>
       )}
