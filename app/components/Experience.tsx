@@ -39,6 +39,11 @@ const entries: ExperienceEntry[] = [
     org: "Walmart",
     role: "Customer Service Associate",
     period: "2022 – 2026",
+    bullets: [
+      "Managed high-volume online grocery fulfillment operations, accurately picking and staging customer orders while maintaining productivity, order accuracy, and service-level expectations",
+      "Utilized Walmart's inventory and order-management systems to locate merchandise, identify inventory discrepancies, and resolve substitutions or out-of-stock items to support efficient order fulfillment",
+      "Coordinated with sales-floor and fulfillment associates to replenish inventory, prioritize time-sensitive orders, and maintain product availability across a fast-paced retail environment",
+    ],
   },
 ];
 
