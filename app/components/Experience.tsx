@@ -37,7 +37,7 @@ const entries: ExperienceEntry[] = [
   {
     type: "work",
     org: "Walmart",
-    role: "Customer Service Associate",
+    role: "Online Grocery Associate",
     period: "2022 – 2026",
     bullets: [
       "Managed high-volume online grocery fulfillment operations, accurately picking and staging customer orders while maintaining productivity, order accuracy, and service-level expectations",
